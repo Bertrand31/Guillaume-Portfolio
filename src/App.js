@@ -2,12 +2,13 @@ import React from 'react';
 
 import './App.css';
 
-import Creation from './Creation';
-
-import MonitaureContent from './Content/Monitaure';
+import Sidebar from './Sidebar/Component';
+import Creation from './Creation/Component';
+import MonitaureContent from './Creation/Data/Monitaure';
 
 const App = () => (
     <div className="App">
+        <Sidebar />
         <div className="c-slider">
             <Creation {...MonitaureContent} />
         </div>

@@ -1,0 +1,17 @@
+.c-sidebar {
+    position:fixed;
+    left:0;top:0;
+    height:100vh;
+    width:50px;
+    background:red;
+}
+.c-sidebar>* {
+    opacity:.5;
+}
+.c-h1 {
+    transform:rotate(-90deg);
+    position:absolute;
+    width:250px;
+    left:-100px;
+    bottom:130px;
+}

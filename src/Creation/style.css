@@ -1,0 +1,23 @@
+.c-creation {
+}
+.c-creation--monitaure {
+    background:#3fbcfe;
+}
+.c-creation--monitaure .c-h2 {
+    color:#3fbcfe;
+}
+.c-pane__left, .c-pane__right {
+    align-self:center;
+}
+.c-pane__left {
+    display:flex;
+    padding:5em 8em;
+    background:#fff;
+    flex-direction:column;
+    justify-content:center;
+    width:60%;
+    max-width:700px;
+}
+.c-tags {
+    display:flex;
+}

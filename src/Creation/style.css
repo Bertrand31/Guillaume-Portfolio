@@ -1,34 +1,27 @@
 .c-creation {
-}
-.c-creation--monitaure {
-    background:#3fbcfe;
-}
-.c-creation--stopdjihad {
-    background:#003188;
-}
-.c-creation--loreal {
-    background:#e27b5c;
-}
-.c-creation--edenpark {
-    background:#fccae3;
-}
-.c-creation--monitaure .c-h2 {
-    color:#3fbcfe;
-}
-.c-creation--stopdjihad .c-h2 {
-    color:#003188;
-}
-.c-creation--loreal .c-h2 {
-    color:#e27b5c;
-}
-.c-creation--edenpark .c-h2 {
-    color:#fccae3;
-}
-.c-pane__left, .c-pane__right {
-    align-self:center;
-}
-.c-pane__left {
     display:flex;
+}
+.c-creation__wrapper {
+    align-self:center;
+    display:flex;
+    align-items:stretch;
+    width:100%;
+    position:relative;
+}
+.c-creation__wrapper:after {
+    content:"";
+    position:absolute;
+    right:4%;
+    top:5%;
+    display:block;
+    width:1px;
+    height:90%;
+    background:rgba(0,0,0,.2);
+}
+
+.c-pane__left {
+    position:relative;
+    z-index:2;
     padding:5em 8em;
     background:#fff;
     flex-direction:column;
@@ -36,6 +29,79 @@
     width:60%;
     max-width:700px;
 }
+.c-pane__right {
+    flex-grow:1;
+    padding-right:5%;
+}
+.c-pane__right:before,
+.c-pane__right:after {
+    content:"";
+    display:block;
+    height:1px;
+    background:rgba(0,0,0,.2);
+    width:80%;
+    position:absolute;
+    left:5%;
+}
+.c-pane__right:before {
+    top:0;
+}
+.c-pane__right:after {
+    bottom:0;
+}
 .c-tags {
     display:flex;
+    text-transform:uppercase;
+    opacity:.35;
+    font:700 .9em/1 Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.c-tags__el {
+    padding:0 1em 0 0;
+}
+.c-h2 {
+    font-family:'League Spartan', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:3em;
+    padding:20% 0;
+}
+.c-content {
+    font-family: 'Source Serif Pro', 'Times New Roman', serif;
+    font-weight:600;
+    color:#919191;
+    font-size:.95em;
+    line-height:1.7em;
+    margin-bottom:20%;
+}
+.c-pane__right {
+    display:flex;
+    position:relative;
+    align-items:center;
+}
+.illus-wrapper {
+    position:relative;
+}
+.illus {
+    transition:all .8s ease-in-out;
+}
+.illus--desktop {
+    position:relative;
+    left:-592px;
+}
+.illus--mobile {
+    position:absolute;
+    bottom:-30px;
+    left:-318px;
+    z-index:1;
+}
+.c-creation.s-is-active .illus--desktop {
+    left:-92px;
+}
+.c-creation.s-is-active .illus--mobile {
+    left:-18px;
+}
+.c-creation-number {
+    position:absolute;
+    right:6%;
+    bottom:0;
+    font:700 2.5em/0 'League Spartan';
+    color:rgba(0,0,0,.5);
 }

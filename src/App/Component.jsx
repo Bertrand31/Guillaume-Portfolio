@@ -30,10 +30,10 @@ class App extends Component {
 		this.state = { current: 0 };
     }
 	onSwipedDown() {
-        this.setState({ current: this.state.current - 1 });
+        this.state.current > 0 && this.setState({ current: this.state.current - 1 });
 	}
 	onSwipedUp() {
-        this.setState({ current: this.state.current + 1 });
+        this.state.current < 5 && this.setState({ current: this.state.current + 1 });
 	}
 
 	render() {
@@ -49,12 +49,12 @@ class App extends Component {
                     onMouseUp={this.onSwipedUp.bind(this)}
                     style={{ transform: `translateY(-${100 * this.state.current}vh)`, ...styles.slider }}
                 >
-                    <Guillaume />
-                    <Creation {...MonitaureContent} />
-                    <Creation {...StopDjihadContent} />
-                    <Creation {...LorealContent} />
-                    <Creation {...EdenParkContent} />
-                    <Interested />
+                    <Guillaume isActive={this.state.current === 0} />
+                    <Creation {...MonitaureContent} isActive={this.state.current === 1} />
+                    <Creation {...StopDjihadContent} isActive={this.state.current === 2} />
+                    <Creation {...LorealContent} isActive={this.state.current === 3} />
+                    <Creation {...EdenParkContent} isActive={this.state.current === 4} />
+                    <Interested isActive={this.state.current === 5} />
                 </Swipeable>
 			</div>
 		);

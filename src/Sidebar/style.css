@@ -3,16 +3,20 @@
     left:0;top:0;
     z-index:1;
     height:100vh;
-    width:50px;
-    background:red;
+    width:100px;
+    text-align:center;
 }
 .c-sidebar>* {
     opacity:.5;
 }
+.c-icons__el {
+    padding:2.3em 0 0;
+}
 .c-h1 {
     transform:rotate(-90deg);
     position:absolute;
-    width:250px;
-    left:-100px;
-    bottom:130px;
+    width:293px;
+   left:-95px;
+    bottom:175px;
+    font:400 1.1em/1 Lato, Helvetica, Arial, sans-serif;
 }

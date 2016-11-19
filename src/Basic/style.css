@@ -4,3 +4,7 @@
 .c-basic__title, .c-basic__link {
     color:#1FDE91;
 }
+.c-basic__title {
+    font-family:'League Spartan', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:7.2em;
+}

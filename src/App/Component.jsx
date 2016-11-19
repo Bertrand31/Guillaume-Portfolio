@@ -29,24 +29,39 @@ class App extends Component {
         super();
 		this.state = { current: 0 };
     }
-	onSwipedDown() {
+	componentDidMount() {
+		document.addEventListener('keydown', this.handleKeyDown.bind(this));
+	}
+	componentWillUnmount() {
+        document.removeEventListener('keydown', this.handleKeyDown.bind(this));
+    }
+
+	gotoPrevious() {
         this.state.current > 0 && this.setState({ current: this.state.current - 1 });
 	}
-	onSwipedUp() {
+	gotoNext() {
         this.state.current < 5 && this.setState({ current: this.state.current + 1 });
 	}
+    handleKeyDown(e) {
+		if (e.keyCode === 40) {
+            this.gotoNext();
+        } else if (e.keyCode === 38) {
+            this.gotoPrevious();
+        }
+    }
 
 	render() {
 		return (
-			<div style={styles.sliderContainer}>
+			<div
+            style={styles.sliderContainer}>
                 <Sidebar isBasic={this.state.current === 0 || this.state.current === 5} />
                 <Swipeable
                     nodeName="main"
                     trackMouse={true}
-                    onSwipedDown={this.onSwipedDown.bind(this)}
-                    onSwipedUp={this.onSwipedUp.bind(this)}
-                    onMouseDown={this.onSwipedDown.bind(this)}
-                    onMouseUp={this.onSwipedUp.bind(this)}
+                    onSwipedDown={this.gotoPrevious.bind(this)}
+                    onMouseDown={this.gotoPrevious.bind(this)}
+                    onSwipedUp={this.gotoNext.bind(this)}
+                    onMouseUp={this.gotoNext.bind(this)}
                     style={{ transform: `translateY(-${100 * this.state.current}vh)`, ...styles.slider }}
                 >
                     <Guillaume isActive={this.state.current === 0} />

@@ -3,8 +3,26 @@
 .c-creation--monitaure {
     background:#3fbcfe;
 }
+.c-creation--stopdjihad {
+    background:#003188;
+}
+.c-creation--loreal {
+    background:#e27b5c;
+}
+.c-creation--edenpark {
+    background:#fccae3;
+}
 .c-creation--monitaure .c-h2 {
     color:#3fbcfe;
+}
+.c-creation--stopdjihad .c-h2 {
+    color:#003188;
+}
+.c-creation--loreal .c-h2 {
+    color:#e27b5c;
+}
+.c-creation--edenpark .c-h2 {
+    color:#fccae3;
 }
 .c-pane__left, .c-pane__right {
     align-self:center;

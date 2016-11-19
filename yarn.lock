@@ -4186,6 +4186,10 @@ react-scroll@^1.4.4:
   dependencies:
     object-assign "^4.0.1"
 
+react-swipeable:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/react-swipeable/-/react-swipeable-3.7.0.tgz#c51f1a9c21e132d06bb95bf75554d23f89385162"
+
 react@^15.3.2:
   version "15.4.0"
   resolved "https://registry.yarnpkg.com/react/-/react-15.4.0.tgz#736c1c7c542e8088127106e1f450b010f86d172b"

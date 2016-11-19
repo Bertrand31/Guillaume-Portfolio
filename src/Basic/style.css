@@ -1,0 +1,6 @@
+.c-basic {
+    background:#083ea8 url('./background.png') right bottom no-repeat;
+}
+.c-basic__title, .c-basic__link {
+    color:#1FDE91;
+}

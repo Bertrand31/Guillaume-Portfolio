@@ -9,6 +9,7 @@ import './style.css';
 
 class Menu extends Component {
     constructor() {
+        super();
         this.setState({ open: false });
     }
     render() {
@@ -73,4 +74,4 @@ class Menu extends Component {
     }
 }
 
-export default Sidebar;
+export default Menu;

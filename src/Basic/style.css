@@ -1,5 +1,30 @@
 .c-basic {
-    background:#083ea8 url('./background.png') right bottom no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:relative;
+    background:#083ea8;
+}
+.c-basic:before {
+    content:"";
+    display:block;
+    width:1px;
+    position:absolute;
+    left:100px;
+    top:0;
+    bottom:0;
+    background:#fff;
+    opacity:.3;
+}
+.c-basic:after {
+    content:"";
+    display:block;
+    background:url('./background.png') right bottom no-repeat;
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:568px;
+    height:942px;
 }
 .c-basic__title, .c-basic__link {
     color:#1FDE91;
@@ -7,4 +32,39 @@
 .c-basic__title {
     font-family:'League Spartan', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size:7.2em;
+    border-bottom:1px solid rgba(255,255,255,.3);
+}
+.c-basic__title, .c-basic__content {
+    padding-left:10%;
+}
+.c-basic__content {
+    display:flex;
+    margin-top:2em;
+}
+.c-basic__content .c-content {
+    max-width:20em;
+    color:#6071f3;
+    margin-right:4em;
+}
+.c-basic__content .c-content strong {
+    color:#fff;
+    font-family:Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight:400;
+}
+.c-basic__content .c-content a {
+    color:#1fd990;
+}
+.c-button {
+    border-color:#1FDE91;
+    color:#1FDE91;
+}
+.c-button--white {
+    border-color:#fff;
+    color:#fff;
+}
+.c-basic--interested .c-basic__content {
+    margin-top:6em;
+}
+.c-basic__content .c-button {
+    margin-right:1em;
 }

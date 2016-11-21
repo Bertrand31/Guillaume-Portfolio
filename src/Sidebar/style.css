@@ -6,13 +6,16 @@
     width:100px;
     text-align:center;
 }
-.c-sidebar>* {
-    opacity:.5;
-}
 .c-icons__el {
     padding:2.3em 0 0;
+    opacity:.5;
+    transition:opacity .3s ease;
+}
+.c-icons__el:hover {
+    opacity:.8;
 }
 .c-h1 {
+    opacity:.5;
     transform:rotate(-90deg);
     position:absolute;
     width:293px;

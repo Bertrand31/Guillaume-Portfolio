@@ -18,7 +18,7 @@ const Creation = ({ slug, number, title, tags, content, url, primary_color, seco
                         {tags.map((tag, i) => (<li key={i} className="c-tags__el">{tag}</li>))}
                     </ul>
                     <h2 className="c-h2" style={{ color: `#${primary_color}` }}>{title}</h2>
-                    <p className="c-content">{content}</p>
+                    <p className="c-content" dangerouslySetInnerHTML={{__html: content}} />
                     <a
                         href={url}
                         className="c-button"

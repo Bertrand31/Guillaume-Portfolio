@@ -2,9 +2,9 @@
     "slug": "loreal",
     "number": "03",
     "title": "l'Oréal",
-    "tags": ["UX", "UI", "Motion", "Webdesign"],
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra tortor vel neque pellentesque bibendum. Donec pharetra leo et mi venenatis, sit amet tincidunt quam dictum. Donec a sapien auctor, sagittis quam ut, pellentesque sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus eleifend non velit sed tempus. Vivamus eu convallis eros, at hendrerit justo. Duis et eros et arcu sagittis iaculis. Pellentesque et urna dolor. Suspendisse sed nisi ut velit dapibus scelerisque sit amet at urna.",
-    "url": "https://monitaure.io/",
+    "tags": ["UI", "Webdesign"],
+    "content": "L'Oréal is a project made during my time at TBWA\\Corporate. The goal was to completely redesign their website dedicated to professionals.<br /><br />I was in charge of all the design aspects.",
+    "url": "http://dribbble.com/guillaumeparra",
     "primary_color": "e27b5c",
     "secondary_color": "c3ae93"
 }

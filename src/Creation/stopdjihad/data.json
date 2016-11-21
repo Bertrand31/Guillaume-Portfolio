@@ -1,10 +1,10 @@
 {
     "slug": "stopdjihad",
     "number": "02",
-    "title": "Stop-Djihadisme",
-    "tags": ["UX", "UI", "Motion", "Webdesign"],
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra tortor vel neque pellentesque bibendum. Donec pharetra leo et mi venenatis, sit amet tincidunt quam dictum. Donec a sapien auctor, sagittis quam ut, pellentesque sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus eleifend non velit sed tempus. Vivamus eu convallis eros, at hendrerit justo. Duis et eros et arcu sagittis iaculis. Pellentesque et urna dolor. Suspendisse sed nisi ut velit dapibus scelerisque sit amet at urna.",
-    "url": "https://monitaure.io/",
+    "title": "Stop Djihadisme",
+    "tags": ["ART", "DIRECTION", "MOTION", "WEBDESIGN"],
+    "content": "Stop Djihadisme is the official french governmental website to help the population to get informed about the radicalization , and prevent it. The website is also a platform to alert authorities about a potential threat, and how to manage an attack.<br />This project was made at TBWA\\Corporate, and I was in charge of the webdesign. I also helped on the motion design for the first interactive campaign against radicalization: <a href='http://toujourslechoix.fr'>toujourslechoix.fr</a>",
+    "url": "http://stop-djihadisme.gouv.fr",
     "primary_color": "003188",
     "secondary_color": "e12f21"
 }

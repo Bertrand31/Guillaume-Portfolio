@@ -2,8 +2,8 @@
     "slug": "monitaure",
     "number": "01",
     "title": "Monitaure",
-    "tags": ["UX", "UI", "Motion", "Webdesign"],
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra tortor vel neque pellentesque bibendum. Donec pharetra leo et mi venenatis, sit amet tincidunt quam dictum. Donec a sapien auctor, sagittis quam ut, pellentesque sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus eleifend non velit sed tempus. Vivamus eu convallis eros, at hendrerit justo. Duis et eros et arcu sagittis iaculis. Pellentesque et urna dolor. Suspendisse sed nisi ut velit dapibus scelerisque sit amet at urna.",
+    "tags": ["UI", "UX", "Motion", "Webdesign"],
+    "content": "is a completely free server monitoring service, accessible directly from your browser. It also provide a lot of cool features, like notifications on your phone and e-mails in your inbox when one of your servers crashes or simply doesn't respond in time.<br /><br />In this project, I was in charge of the design. From the emails to the dashboard, everything was done from scratch.",
     "url": "https://monitaure.io/",
     "primary_color": "3fbcfe",
     "secondary_color": "34c791"

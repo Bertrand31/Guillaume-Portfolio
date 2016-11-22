@@ -1,2 +1,12 @@
 .c-menu {
+    position:fixed;
+    right:-50%;
+    width:50%;
+    height:100%;
+    background:#fff;
+    z-index:1;
+    transition:all .5s ease-in-out;
+}
+.c-menu.s-is-open {
+    right:0;
 }

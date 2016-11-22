@@ -1,6 +1,62 @@
 .c-creation {
     display:flex;
 }
+.c-hamburger {
+    position:absolute;
+    top:-23px;
+    right:1.9rem;
+	padding:15px 35px;
+	border:solid 1px #fff;
+	display: inline-block;
+	cursor: pointer;
+	transition-property: opacity, -webkit-filter;
+	transition-property: opacity, filter;
+	transition-property: opacity, filter, -webkit-filter;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
+	color: inherit;
+	text-transform: none;
+	background-color: transparent;
+	margin: 0;
+	overflow: visible;
+    outline:none;
+}
+.c-hamburger:hover {
+    opacity: 0.7;
+}
+.c-hamburger__box {
+	width: 24px;
+	height: 18px;
+	display: inline-block;
+	position: relative;
+}
+.c-hamburger__inner {
+	display: block;
+	top: 50%;
+	margin-top: -2px;
+}
+.c-hamburger__inner, .c-hamburger__inner::before, .c-hamburger__inner::after {
+    width: 24px;
+    height:1px;
+    background-color:#fff;
+    position: absolute;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+.c-hamburger__inner::before, .c-hamburger__inner::after {
+    content: "";
+	display: block;
+}
+.c-hamburger__inner::before {
+	top: -9px;
+}
+.c-hamburger__inner::after {
+	bottom: -9px;
+}
+
 .c-creation__wrapper {
     align-self:center;
     display:flex;
@@ -11,11 +67,11 @@
 .c-creation__wrapper:after {
     content:"";
     position:absolute;
-    right:4%;
-    top:5%;
+    right:4.7rem;
+    top:7%;
     display:block;
     width:1px;
-    height:90%;
+    height:88%;
     background:rgba(0,0,0,.2);
 }
 
@@ -39,7 +95,7 @@
     display:block;
     height:1px;
     background:rgba(0,0,0,.2);
-    width:calc(92% - 6em);
+    width:calc(92% - 8rem);
     position:absolute;
     left:5%;
 }
@@ -103,7 +159,7 @@
 }
 .c-creation-number {
     position:absolute;
-    right:6%;
+    right:3.8rem;
     bottom:0;
     font:700 2.5em/0 'League Spartan';
     color:rgba(0,0,0,.5);

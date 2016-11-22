@@ -52,8 +52,8 @@ class App extends Component {
 
 	render() {
 		return (
-			<div
-            style={styles.sliderContainer}>
+			<div style={styles.sliderContainer}>
+                <Menu />
                 <Sidebar isBasic={this.state.current === 0 || this.state.current === 5} />
                 <Swipeable
                     nodeName="main"

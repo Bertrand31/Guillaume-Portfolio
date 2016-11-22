@@ -28,6 +28,11 @@ const Creation = ({ slug, number, title, tags, content, url, primary_color, seco
                     </a>
                 </article>
                 <aside className="c-pane__right">
+                    <button className="c-hamburger" type="button">
+                        <span className="c-hamburger__box">
+                            <span className="c-hamburger__inner"></span>
+                        </span>
+                    </button>
                     <div className="illus-wrapper">
                         <img src={desktop} alt={`${title} on desktop`} className="illus illus--desktop" />
                         <img src={mobile} alt={`${title} on mobile`} className="illus illus--mobile" />

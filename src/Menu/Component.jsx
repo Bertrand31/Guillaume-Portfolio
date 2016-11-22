@@ -10,7 +10,7 @@ import './style.css';
 class Menu extends Component {
     constructor() {
         super();
-        this.setState({ open: false });
+        this.state = { open: false };
     }
     render() {
         return (

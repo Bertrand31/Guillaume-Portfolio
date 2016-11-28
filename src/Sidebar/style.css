@@ -1,10 +1,16 @@
 .c-sidebar {
-    position:fixed;
-    left:0;top:0;
-    z-index:1;
-    height:100vh;
-    width:100px;
-    text-align:center;
+    display:none;
+}
+@media screen and (min-width: 768px) {
+    .c-sidebar {
+        display:block;
+        position:fixed;
+        left:0;top:0;
+        z-index:1;
+        height:100vh;
+        width:100px;
+        text-align:center;
+    }
 }
 .c-icons__el {
     padding:2.3em 0 0;

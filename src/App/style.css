@@ -16,11 +16,16 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
 .c-pane {
     box-sizing:border-box;
     height:100vh;
-    padding-left:100px;
+}
+
+@media screen and (min-width: 768px) {
+    .c-pane {
+        padding-left:100px;
+    }
 }
 
 .c-button {
-    display:inline;
+    display:inline-block;
     text-transform:uppercase;
     text-decoration:none;
     font-size:1.25em;

@@ -3,7 +3,7 @@ import Swipeable from 'react-swipeable';
 
 import './style.css';
 
-import Menu from '../Menu/Component';
+// import Menu from '../Menu/Component';
 import Sidebar from '../Sidebar/Component';
 import Guillaume from '../Basic/Guillaume';
 import Interested from '../Basic/Interested';
@@ -54,7 +54,7 @@ class App extends Component {
 	render() {
 		return (
 			<div style={styles.sliderContainer}>
-                <Menu />
+                {/*<Menu />*/}
                 <Sidebar isBasic={this.state.current === 0 || this.state.current === 5} />
                 <Swipeable
                     nodeName="main"

@@ -18,19 +18,25 @@ const Menu = ({ isOpen, closeMenu, goto }) => (
                     </a>
                 </li>
                 <li className="c-works__el">
-                    <a className="c-works__link" href="#_">
+                    <a className="c-works__link" href="#_" onClick={(e) => { e.preventDefault(); goto(2); }}>
                         Stop Djihadisme
                         <span className="c-keywords">UI UX MOTION WEBDESIGN</span>
                     </a>
                 </li>
                 <li className="c-works__el">
-                    <a className="c-works__link" href="#_">
+                    <a className="c-works__link" href="#_" onClick={(e) => { e.preventDefault(); goto(3); }}>
+                        Outre Mer
+                        <span className="c-keywords">UI UX MOTION WEBDESIGN</span>
+                    </a>
+                </li>
+                <li className="c-works__el">
+                    <a className="c-works__link" href="#_" onClick={(e) => { e.preventDefault(); goto(4); }}>
                         l'Oréal
                         <span className="c-keywords">UI UX MOTION WEBDESIGN</span>
                     </a>
                 </li>
                 <li className="c-works__el">
-                    <a className="c-works__link" href="#_">
+                    <a className="c-works__link" href="#_" onClick={(e) => { e.preventDefault(); goto(5); }}>
                         Eden Park
                         <span className="c-keywords">UI UX MOTION WEBDESIGN</span>
                     </a>

@@ -29,7 +29,7 @@ class App extends Component {
 
     goto(destination) {
         this.executeTransition();
-        this.closeMenu();
+        this.state.isMenuOpen && this.closeMenu();
         this.setState({ ...this.state, current: destination });
     }
 	gotoPrevious() {

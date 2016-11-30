@@ -20,6 +20,9 @@ const Menu = ({ creationsData, isOpen, closeMenu, goto }) => (
                             style={{ color: `#${data.primary_color}` }}
                         >
                             {data.title}
+                            <span className="c-works__tags">
+                                {data.tags.join(' ')}
+                            </span>
                         </a>
                     </li>
                 )}

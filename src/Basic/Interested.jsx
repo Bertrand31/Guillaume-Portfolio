@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-const Interested = () => (
-    <section className="c-pane c-basic c-basic--interested">
+const Interested = ({ isActive }) => (
+    <section className={`c-pane c-basic c-basic--interested ${isActive ? 's-is-active' : ''}`}>
         <h2 className="c-basic__title">Interested?</h2>
         <article className="c-basic__content">
             <a href="mailto:parra.guillaume@gmail.com" className="c-button c-button--white">Send me an email</a>
@@ -10,5 +10,9 @@ const Interested = () => (
         </article>
     </section>
 );
+
+Interested.propTypes = {
+    isActive: PropTypes.bool.isRequired,
+};
 
 export default Interested;

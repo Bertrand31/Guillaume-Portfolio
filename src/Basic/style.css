@@ -2,7 +2,6 @@
     display:flex;
     flex-direction:column;
     justify-content:center;
-    position:relative;
     background:#083ea8;
 }
 .c-basic:after {

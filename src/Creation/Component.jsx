@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 
 import './style.css';
 
-const Creation = ({ slug, number, title, tags, content, url, primary_color, secondary_color, isActive }) => {
+const Creation = ({ slug, number, title, tags, content, url, primary_color, secondary_color, isActive, toggleMenu }) => {
 
     const desktop = require(`./${slug}/desktop.png`);
     const mobile = require(`./${slug}/mobile.png`);
@@ -28,7 +28,7 @@ const Creation = ({ slug, number, title, tags, content, url, primary_color, seco
                     </a>
                 </article>
                 <aside className="c-pane__right">
-                    <button className="c-hamburger" type="button">
+                    <button onClick={toggleMenu} className="c-hamburger" type="button">
                         <span className="c-hamburger__box">
                             <span className="c-hamburger__inner"></span>
                         </span>

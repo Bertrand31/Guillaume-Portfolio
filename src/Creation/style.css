@@ -7,7 +7,7 @@
     right:1.9rem;
 	padding:15px 35px;
 	border:solid 1px #fff;
-	/* display: inline-block; */
+	display: inline-block;
 	cursor: pointer;
 	transition-property: opacity, -webkit-filter;
 	transition-property: opacity, filter;
@@ -184,19 +184,3 @@
         left:-18px;
     }
 }
-
-/* TMP */
-.c-hamburger {
-    display:none;
-}
-@media screen and (min-width:768px) {
-    /* .c-pane__right:before { */
-    /*     width:81.3%; */
-    /* } */
-    /* .c-creation__wrapper:after { */
-    /*     top:0; */
-    /*     height:93%; */
-    /* } */
-}
-/* END TMP */
-

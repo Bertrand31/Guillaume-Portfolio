@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 import './style.css';
 
-const Guillaume = () => (
-    <section className="c-pane c-basic c-basic--guillaume">
+const Guillaume = ({ isActive }) => (
+    <section className={`c-pane c-basic c-basic--guillaume ${isActive ? 's-is-active' : ''}`}>
         <h2 className="c-basic__title">Guillaume</h2>
         <article className="c-basic__content">
             <p className="c-content">
@@ -16,5 +16,9 @@ const Guillaume = () => (
         </article>
     </section>
 );
+
+Guillaume.propTypes = {
+    isActive: PropTypes.bool.isRequired,
+};
 
 export default Guillaume;

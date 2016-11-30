@@ -9,16 +9,20 @@ import Guillaume from '../Basic/Guillaume';
 import Interested from '../Basic/Interested';
 
 import Creation from '../Creation/Component';
-import MonitaureContent from '../Creation/monitaure/data.json';
-import EdenParkContent from '../Creation/edenpark/data.json';
-import OutreMerContent from '../Creation/outremer/data.json';
-import LorealContent from '../Creation/loreal/data.json';
-import StopDjihadContent from '../Creation/stopdjihad/data.json';
+
+import Monitaure from '../Creation/monitaure/data.json';
+import EdenPark from '../Creation/edenpark/data.json';
+import OutreMer from '../Creation/outremer/data.json';
+import Loreal from '../Creation/loreal/data.json';
+import StopDjihad from '../Creation/stopdjihad/data.json';
+
+const creationsData = [ Monitaure, EdenPark, OutreMer, Loreal, StopDjihad ];
 
 class App extends Component {
 	constructor() {
         super();
 		this.state = { current: 0, isTransitionning: false, isMenuOpen: false };
+        this.numberOfSlides = creationsData.length + 2;
     }
 	componentDidMount() {
 		document.addEventListener('keydown', this.handleKeyDown.bind(this));
@@ -36,7 +40,7 @@ class App extends Component {
         this.state.current > 0 && this.goto(this.state.current - 1);
 	}
 	gotoNext() {
-        this.state.current < 6 && this.goto(this.state.current + 1);
+        this.state.current < this.numberOfSlides - 1 && this.goto(this.state.current + 1);
 	}
     handleKeyDown(e) {
 		if (e.keyCode === 40) {
@@ -62,6 +66,7 @@ class App extends Component {
 		return (
 			<div className="c-slider-container">
                 <Menu
+                    creationsData={creationsData}
                     isOpen={this.state.isMenuOpen}
                     closeMenu={this.closeMenu.bind(this)}
                     goto={this.goto.bind(this)}
@@ -78,31 +83,9 @@ class App extends Component {
                     onClick={() => this.state.isMenuOpen && this.closeMenu()}
                 >
                     <Guillaume isActive={this.state.current === 0} />
-                    <Creation
-                        {...MonitaureContent}
-                        isActive={this.state.current === 1}
-                        toggleMenu={this.toggleMenu.bind(this)}
-                    />
-                    <Creation
-                        {...StopDjihadContent}
-                        isActive={this.state.current === 2}
-                        toggleMenu={this.toggleMenu.bind(this)}
-                    />
-                    <Creation
-                        {...OutreMerContent}
-                        isActive={this.state.current === 3}
-                        toggleMenu={this.toggleMenu.bind(this)}
-                    />
-                    <Creation
-                        {...LorealContent}
-                        isActive={this.state.current === 4}
-                        toggleMenu={this.toggleMenu.bind(this)}
-                    />
-                    <Creation
-                        {...EdenParkContent}
-                        isActive={this.state.current === 5}
-                        toggleMenu={this.toggleMenu.bind(this)}
-                    />
+                    {creationsData.map((data, i) =>
+                        <Creation {...data} isActive={this.state.current === i + 1} toggleMenu={this.toggleMenu.bind(this)} key={i} />
+                    )}
                     <Interested isActive={this.state.current === 6} />
                 </Swipeable>
 			</div>

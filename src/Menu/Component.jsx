@@ -6,41 +6,18 @@ import linkedin from './pictos/linkedin.svg';
 
 import './style.css';
 
-const Menu = ({ isOpen, closeMenu, goto }) => (
+const Menu = ({ creationsData, isOpen, closeMenu, goto }) => (
     <nav className={`c-menu ${isOpen ? 's-is-open' : ''}`}>
         <section className="c-menu__works">
             <h2 className="c-menu__title">Works</h2>
             <ul className="c-works">
-                <li className="c-works__el">
-                    <a className="c-works__link" href="#_" onClick={(e) => { e.preventDefault(); goto(1); }}>
-                        Monitaure
-                        <span className="c-keywords">UI UX MOTION WEBDESIGN</span>
-                    </a>
-                </li>
-                <li className="c-works__el">
-                    <a className="c-works__link" href="#_" onClick={(e) => { e.preventDefault(); goto(2); }}>
-                        Stop Djihadisme
-                        <span className="c-keywords">UI UX MOTION WEBDESIGN</span>
-                    </a>
-                </li>
-                <li className="c-works__el">
-                    <a className="c-works__link" href="#_" onClick={(e) => { e.preventDefault(); goto(3); }}>
-                        Outre Mer
-                        <span className="c-keywords">UI UX MOTION WEBDESIGN</span>
-                    </a>
-                </li>
-                <li className="c-works__el">
-                    <a className="c-works__link" href="#_" onClick={(e) => { e.preventDefault(); goto(4); }}>
-                        l'Oréal
-                        <span className="c-keywords">UI UX MOTION WEBDESIGN</span>
-                    </a>
-                </li>
-                <li className="c-works__el">
-                    <a className="c-works__link" href="#_" onClick={(e) => { e.preventDefault(); goto(5); }}>
-                        Eden Park
-                        <span className="c-keywords">UI UX MOTION WEBDESIGN</span>
-                    </a>
-                </li>
+                {creationsData.map((data, i) =>
+                    <li className="c-works__el" key={i}>
+                        <a className="c-works__link" href="#_" onClick={(e) => { e.preventDefault(); goto(i + 1); }}>
+                            {data.title}
+                        </a>
+                    </li>
+                )}
             </ul>
         </section>
         <section className="c-menu__contact">
@@ -72,6 +49,7 @@ const Menu = ({ isOpen, closeMenu, goto }) => (
 );
 
 Menu.propTypes = {
+    creationsData: PropTypes.array.isRequired,
     isOpen: PropTypes.bool.isRequired,
     closeMenu: PropTypes.func.isRequired,
     goto: PropTypes.func.isRequired,

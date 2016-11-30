@@ -13,7 +13,12 @@ const Menu = ({ creationsData, isOpen, closeMenu, goto }) => (
             <ul className="c-works">
                 {creationsData.map((data, i) =>
                     <li className="c-works__el" key={i}>
-                        <a className="c-works__link" href="#_" onClick={(e) => { e.preventDefault(); goto(i + 1); }}>
+                        <a
+                            className="c-works__link"
+                            href="#_"
+                            onClick={(e) => { e.preventDefault(); goto(i + 1); }}
+                            style={{ color: `#${data.primary_color}` }}
+                        >
                             {data.title}
                         </a>
                     </li>

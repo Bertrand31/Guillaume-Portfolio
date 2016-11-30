@@ -1,8 +1,6 @@
 import React, { PropTypes } from 'react';
 
-import dribble from './pictos/dribble.svg';
-import twitter from './pictos/twitter.svg';
-import linkedin from './pictos/linkedin.svg';
+import SocialIcons from '../SocialIcons/Component';
 
 import './style.css';
 
@@ -35,23 +33,7 @@ const Menu = ({ creationsData, isOpen, closeMenu, goto }) => (
             </a>
         </section>
         <section className="c-menu__social">
-            <ul className="c-icons">
-                <li className="c-icons__el">
-                    <a className="c-icon c-icon--dribble" href="https://dribbble.com/guillaumeparra/">
-                        <img src={dribble} alt="Twitter profile" />
-                    </a>
-                </li>
-                <li className="c-icons__el">
-                    <a className="c-icon c-icon--twitter" href="https://twitter.com/guillaume_parra">
-                        <img src={twitter} alt="Twitter profile" />
-                    </a>
-                </li>
-                <li className="c-icons__el">
-                    <a className="c-icon c-icon--linkedin" href="https://www.linkedin.com/in/whyyouwillhireme">
-                        <img src={linkedin} alt="Linkedin profile" />
-                    </a>
-                </li>
-            </ul>
+            <SocialIcons />
         </section>
     </nav>
 );

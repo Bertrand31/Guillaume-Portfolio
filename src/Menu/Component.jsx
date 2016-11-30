@@ -10,16 +10,21 @@ const Menu = ({ creationsData, isOpen, closeMenu, goto }) => (
             <h2 className="c-menu__title">Works</h2>
             <ul className="c-works">
                 {creationsData.map((data, i) =>
-                    <li className="c-works__el" key={i}>
+                    <li
+                        className="c-works__el"
+                        style={{ color: `#${data.primary_color}` }}
+                        key={i}
+                    >
                         <a
                             className="c-works__link"
-                            href="#_"
                             onClick={(e) => { e.preventDefault(); goto(i + 1); }}
-                            style={{ color: `#${data.primary_color}` }}
+                            href="#_"
                         >
-                            {data.title}
+                            <span className="c-works__title">{data.title}</span>
                             <span className="c-works__tags">
-                                {data.tags.join(' ')}
+                                {data.tags.map((tag, i) =>
+                                    <span className="c-works__tag" key={i}>{tag}</span>
+                                )}
                             </span>
                         </a>
                     </li>

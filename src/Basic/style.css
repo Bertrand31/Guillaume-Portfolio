@@ -14,6 +14,15 @@
     width:568px;
     height:942px;
 }
+.c-basic__content:before {
+    content:"";
+    display:block;
+    position:absolute;
+    bottom:6%;
+    background:url('./swipe.svg') center center no-repeat;
+    width:74px;
+    height:48px;
+}
 @media screen and (min-width: 768px) {
     .c-basic:before {
         content:"";

@@ -35,7 +35,7 @@ class App extends Component {
     goto(destination) {
         this.executeTransition();
         this.state.isMenuOpen && this.closeMenu();
-        this.setState({ ...this.state, current: destination });
+        this.setState({ current: destination });
     }
 	gotoPrevious() {
         this.state.current > 0 && this.goto(this.state.current - 1);
@@ -51,16 +51,16 @@ class App extends Component {
         }
     }
     executeTransition() {
-        this.setState({ ...this.state, isTransitionning: true });
+        this.setState({ isTransitionning: true });
         setTimeout(() => {
-            this.setState({ ...this.state, isTransitionning: false });
+            this.setState({ isTransitionning: false });
         }, 800);
     }
     toggleMenu() {
-        this.setState({ ...this.state, isMenuOpen: !this.state.isMenuOpen });
+        this.setState({ isMenuOpen: !this.state.isMenuOpen });
     }
     closeMenu() {
-        this.setState({ ...this.state, isMenuOpen: false });
+        this.setState({ isMenuOpen: false });
     }
 
 	render() {

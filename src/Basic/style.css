@@ -11,10 +11,10 @@
     position:absolute;
     right:0;
     bottom:0;
-    width:568px;
+    width:593px;
     height:976px;
 }
-.c-basic__content:before {
+.c-basic--guillaume .c-basic__content:before {
     content:"";
     display:block;
     position:absolute;

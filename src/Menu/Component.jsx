@@ -6,7 +6,7 @@ import './style.css';
 
 const Menu = ({ creationsData, isOpen, closeMenu, goto }) => (
     <nav className={`c-menu ${isOpen ? 's-is-open' : ''}`}>
-        <section className="c-menu__works">
+        <section className="c-menublock c-menublock--works">
             <h2 className="c-menu__title">Works</h2>
             <ul className="c-works">
                 {creationsData.map((data, i) =>
@@ -31,13 +31,13 @@ const Menu = ({ creationsData, isOpen, closeMenu, goto }) => (
                 )}
             </ul>
         </section>
-        <section className="c-menu__contact">
+        <section className="c-menublock c-menublock--contact">
             <h2 className="c-menu__title">Contact</h2>
             <a href="mailto:parra.guillaume@gmail.com" className="c-email-link">
                 parra.guillaume@gmail.com
             </a>
         </section>
-        <section className="c-menu__social">
+        <section className="c-menublock c-menublock--social">
             <SocialIcons />
         </section>
     </nav>

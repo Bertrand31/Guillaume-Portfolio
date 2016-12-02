@@ -1,19 +1,28 @@
 .c-menu {
     position:fixed;
     right:-50%;
+    z-index:2;
+    overflow:hidden;
     width:50%;
     height:100%;
     background:#fff;
-    z-index:2;
     transition:all .5s ease-in-out;
-    overflow:hidden;
+    border-left:10px solid #1FDE91;
+    font-family:'League Spartan', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .c-menu.s-is-open {
     right:0;
 }
+.c-menu__title {
+    text-transform:uppercase;
+    color:#979797;
+    font-size:.7em;
+}
+.c-works__el {
+    padding:1em 0;
+}
 .c-works__link {
     font-size:2em;
-    font-family:'League Spartan', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color:#979797;
     text-decoration:none;
     transition:color .3s ease-in-out;
@@ -26,18 +35,29 @@
     z-index:1;
 }
 .c-works__tags {
-    opacity:0;
-    color:#e2e2e2;
     position:relative;
     left:-100%;
+    opacity:0;
+    color:#e2e2e2;
     font-size:.35em;
     text-transform:uppercase;
     transition:all .4s ease-in-out;
 }
 .c-works__link:hover .c-works__tags {
-    opacity:1;
     left:0;
+    opacity:1;
 }
 .c-works__tag {
     padding:0 0 0 .8em;
+}
+.c-email-link {
+    font-size:2em;
+    text-decoration:none;
+    color:#083ea8;
+}
+.c-menu__social .c-icons {
+    display:flex;
+}
+.c-menu__social .c-icons__el {
+    padding-right:1.8em;
 }

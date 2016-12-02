@@ -33,7 +33,7 @@ const Menu = ({ creationsData, isOpen, closeMenu, goto }) => (
         </section>
         <section className="c-menu__contact">
             <h2 className="c-menu__title">Contact</h2>
-            <a href="mailto:parra.guillaume@gmail.com">
+            <a href="mailto:parra.guillaume@gmail.com" className="c-email-link">
                 parra.guillaume@gmail.com
             </a>
         </section>

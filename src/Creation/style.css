@@ -67,12 +67,13 @@
 }
 
 .c-pane__left {
+    display:flex;
     position:relative;
     z-index:2;
     background:#fff;
     flex-direction:column;
-    justify-content:center;
     padding:2em;
+    min-height:833px;
 }
 .c-tags {
     display:flex;
@@ -89,6 +90,7 @@
     font-size:1.6em;
 }
 .c-content {
+    flex-grow:1;
     font-family: 'Source Serif Pro', 'Times New Roman', serif;
     font-weight:600;
     color:#919191;
@@ -98,6 +100,9 @@
 }
 .c-content a {
     color:#919191;
+}
+.c-pane__left .c-button {
+    align-self:flex-start;
 }
 .c-pane__right {
     display:flex;

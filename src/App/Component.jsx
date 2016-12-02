@@ -16,12 +16,13 @@ import OutreMer from '../Creation/outremer/data.json';
 import Loreal from '../Creation/loreal/data.json';
 import StopDjihad from '../Creation/stopdjihad/data.json';
 
-const creationsData = [ Monitaure, EdenPark, OutreMer, Loreal, StopDjihad ];
+const creationsData = [ Monitaure, StopDjihad, Loreal, EdenPark, OutreMer];
 
 class App extends Component {
 	constructor() {
         super();
 		this.state = { current: 0, isTransitionning: false, isMenuOpen: false };
+        // +2 because of the first and last 'basic' slides
         this.numberOfSlides = creationsData.length + 2;
     }
 	componentDidMount() {
@@ -71,7 +72,7 @@ class App extends Component {
                     closeMenu={this.closeMenu.bind(this)}
                     goto={this.goto.bind(this)}
                 />
-                <Sidebar isBasic={this.state.current === 0 || this.state.current === 6} />
+                <Sidebar isBasic={this.state.current === 0 || this.state.current === this.numberOfSlides - 1} />
                 <Swipeable
                     nodeName="main"
                     trackMouse={true}
@@ -86,7 +87,7 @@ class App extends Component {
                     {creationsData.map((data, i) =>
                         <Creation {...data} isActive={this.state.current === i + 1} toggleMenu={this.toggleMenu.bind(this)} key={i} />
                     )}
-                    <Interested isActive={this.state.current === 6} />
+                    <Interested isActive={this.state.current === this.numberOfSlides - 1} />
                 </Swipeable>
 			</div>
 		);

@@ -54,6 +54,7 @@ Creation.propTypes = {
     primary_color: PropTypes.string.isRequired,
     secondary_color: PropTypes.string.isRequired,
     isActive: PropTypes.bool.isRequired,
+    toggleMenu: PropTypes.func.isRequired,
 };
 
 export default Creation;

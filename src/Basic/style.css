@@ -46,17 +46,19 @@
     display:flex;
     margin-top:2em;
 }
-.c-basic__content .c-content {
+.c-basic__contentblock {
+    font:600 .95em/1.7em 'Source Serif Pro', 'Times New Roman', serif;
+    margin-bottom:2em;
     max-width:20em;
     color:#6071f3;
     margin-right:4em;
 }
-.c-basic__content .c-content strong {
+.c-basic__contentblock strong {
     color:#fff;
     font-family:Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight:400;
 }
-.c-basic__content .c-content a {
+.c-basic__contentblock a {
     color:#1fd990;
 }
 .c-button {

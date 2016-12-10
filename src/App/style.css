@@ -19,6 +19,8 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
         overflow:hidden;
     }
     .c-pane {
+        height:100vh;
+        overflow:hidden;
         padding-left:100px;
     }
 }

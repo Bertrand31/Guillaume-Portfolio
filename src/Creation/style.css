@@ -73,7 +73,6 @@
     background:#fff;
     flex-direction:column;
     padding:2em;
-    min-height:833px;
 }
 .c-tags {
     display:flex;
@@ -143,7 +142,7 @@
         background:rgba(0,0,0,.2);
     }
     .c-pane__left {
-        padding:5em 8em;
+        padding:4em;
         width:60%;
         max-width:700px;
     }
@@ -168,11 +167,7 @@
         bottom:0;
     }
     .c-h2 {
-        padding:20% 0;
         font-size:3em;
-    }
-    .c-content {
-        margin-bottom:20%;
     }
     .c-creation-number {
         display:block;
@@ -187,5 +182,17 @@
     }
     .c-creation.s-is-active .illus--mobile {
         left:-18px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .c-pane__left {
+        padding:5em 8em;
+        min-height:833px;
+    }
+    .c-h2 {
+        padding:20% 0;
+    }
+    .c-content {
+        margin-bottom:20%;
     }
 }

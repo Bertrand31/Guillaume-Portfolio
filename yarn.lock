@@ -1545,9 +1545,9 @@ detect-indent@^4.0.0:
   dependencies:
     repeating "^2.0.0"
 
-detect-port@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/detect-port/-/detect-port-1.0.6.tgz#44b57a9be268ee235d441395b4619b78a41545ef"
+detect-port:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/detect-port/-/detect-port-1.0.7.tgz#f8cddc7b996fb8f8019a5ab50c4b5f3a9b51b046"
 
 diff@^3.0.0:
   version "3.1.0"

@@ -78,7 +78,7 @@
 .c-menublock--social .c-icons__el {
     padding-right:1.8em;
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) and (min-height: 780px) {
     .c-works__el {
         padding:1em 0;
     }

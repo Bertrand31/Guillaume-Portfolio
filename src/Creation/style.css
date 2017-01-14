@@ -184,7 +184,7 @@
         left:-18px;
     }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) and (min-height: 780px) {
     .c-pane__left {
         padding:5em 8em;
         min-height:833px;

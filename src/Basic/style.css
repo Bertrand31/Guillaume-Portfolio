@@ -27,19 +27,19 @@
     width:110px;
     height:68px;
     background-size:104px 78px;
-    animation: 1.5s wiggle;
+    animation: wiggle 16s ease-in-out 4s infinite;
 }
 @keyframes wiggle {
     0% {
         transform: translateY(0);
     }
-    33% {
+    3% {
         transform: translateY(13px);
     }
-    66% {
-        transform: translateY(-8px);
+    6% {
+        transform: translateY(-2px);
     }
-    100% {
+    10% {
         transform: translateY(0px);
     }
 }

@@ -15,13 +15,33 @@
     height:976px;
 }
 .c-basic--guillaume .c-basic__content:before {
-    content:"";
+    color:rgba(255,255,255,.4);
+    text-align: center;
+    font:.75em Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    content:"Swipe or press keys";
+    padding-top:6.8em;
     display:block;
     position:absolute;
     bottom:6%;
     background:url('./swipe.svg') center center no-repeat;
-    width:74px;
-    height:48px;
+    width:110px;
+    height:68px;
+    background-size:104px 78px;
+    animation: 1.5s wiggle;
+}
+@keyframes wiggle {
+    0% {
+        transform: translateY(0);
+    }
+    33% {
+        transform: translateY(13px);
+    }
+    66% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 @media screen and (min-width: 768px) {
     .c-basic:before {

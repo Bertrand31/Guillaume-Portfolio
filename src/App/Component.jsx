@@ -16,7 +16,7 @@ import OutreMer from '../Creation/outremer/data.json';
 import Loreal from '../Creation/loreal/data.json';
 import StopDjihad from '../Creation/stopdjihad/data.json';
 
-const creationsData = [ Monitaure, StopDjihad, Loreal, EdenPark, OutreMer];
+const creationsData = [ Monitaure, StopDjihad, Loreal, EdenPark, OutreMer ];
 
 class App extends Component {
 	constructor() {

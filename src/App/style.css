@@ -44,6 +44,7 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
     opacity:0;
     z-index:0;
     transition:opacity .8s ease-in-out;
+    user-select: none;
 }
 .c-pane.s-is-active {
     opacity:1;

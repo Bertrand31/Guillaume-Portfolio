@@ -83,11 +83,11 @@ class App extends Component {
                     className={this.state.isTransitionning ? 's-is-transitionning' : 's-is-done-transitionning'}
                     onClick={() => this.state.isMenuOpen && this.closeMenu()}
                 >
-                    <Guillaume isActive={this.state.current === 0} />
+                    <Guillaume isActive={this.state.current === 0} toggleMenu={this.toggleMenu.bind(this)} />
                     {creationsData.map((data, i) =>
                         <Creation {...data} isActive={this.state.current === i + 1} toggleMenu={this.toggleMenu.bind(this)} key={i} />
                     )}
-                    <Interested isActive={this.state.current === this.numberOfSlides - 1} />
+                    <Interested isActive={this.state.current === this.numberOfSlides - 1} toggleMenu={this.toggleMenu.bind(this)} />
                 </Swipeable>
 			</div>
 		);
